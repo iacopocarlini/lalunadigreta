@@ -1,25 +1,24 @@
 ---
-import HeaderLink from './HeaderLink.astro';
 import { SITE_TITLE } from '../consts';
 ---
 
-<header>
-	<h2>
-		{SITE_TITLE}
-	</h2>
-	<nav>
-		<HeaderLink href="/">Home</HeaderLink>
-		<HeaderLink href="/blog">Blog</HeaderLink>
-		<HeaderLink href="/about">About</HeaderLink>
-		<HeaderLink href="https://twitter.com/astrodotbuild" target="_blank">Twitter</HeaderLink>
-		<HeaderLink href="https://github.com/withastro/astro" target="_blank">GitHub</HeaderLink>
-	</nav>
+<!-- Header Menu Center -->
+<header class="w-full text-gray-700 bg-white border-t border-gray-100 shadow-sm body-font">
+	<div class="container flex flex-row items-start justify-between p-6 mx-auto md:flex-row">
+		
+		<!-- Icon -->
+		<a class="flex items-center my-auto font-medium text-gray-900 title-font md:mb-0">
+			<img src='/favicon.png' alt='Restaurant icon' class='w-8 max-w-xs my-auto'/>
+		</a>
+		
+		<!-- Title -->
+		<nav class="flex-2 mx-auto my-auto">
+			<a href="#_" class="m-auto font-bold">{SITE_TITLE}</a>
+		</nav>
+		
+		<!-- Language flags -->
+		<div class="items-center h-full my-auto">
+			<img src='/it.png' alt='Italian flag' class='w-8 max-w-xs rounded-sm'/>
+		</div>
+	</div>
 </header>
-<style>
-	header {
-		margin: 0em 0 2em;
-	}
-	h2 {
-		margin: 0.5em 0;
-	}
-</style>
