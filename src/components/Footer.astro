@@ -1,8 +1,27 @@
 ---
-import { AUTHOR } from '../consts';
+import { AUTHOR, AUTHOR_LINK } from '../consts';
 const today = new Date();
 ---
 
-<footer class='h-4 my-4 text-center text-xs'>
-	&copy; {today.getFullYear()} {AUTHOR}. All rights reserved.
+<footer class='h-4 my-8 text-center text-xs'>
+
+	&copy; {today.getFullYear()}
+	
+	Made with 
+	
+	<a 
+		href='https://astro.build/'
+		target="_blank">
+			<img src="./astro-logo-dark.png" class="h-4 mx-1 inline"/> 
+	</a>
+	
+	by 
+	<a 
+		class='font-medium text-blue-600' 
+		href={AUTHOR_LINK} 
+		target="_blank">
+		{AUTHOR}
+	</a>
+
+
 </footer>
