@@ -1,11 +1,14 @@
 ---
 import {languages} from '../i18n/strings';
+
 ---
 
-<ul>
-  {Object.entries(languages).map(([lang, label]) => (
-    <li>
-      <a href={`/${lang}/`}>{label}</a>
-    </li>
-  ))}
-</ul>
+<!-- Language flags -->
+<div class="items-center h-full my-auto">
+  <!-- <img src='/it.png' alt='Italian flag' class='w-8 max-w-xs rounded-md'/> -->
+  <p class="text-xs">
+    {Object.entries(languages).map(([lang, label]) => (
+        <a href={`/${lang}/`}>{label} - </a>
+    ))}
+  </p>
+</div>
