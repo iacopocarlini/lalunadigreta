@@ -1,5 +1,6 @@
 ---
 import { getLangFromUrl, useTranslations  } from '../i18n/utils';
+import ImageCarousel from './LandingImageCarousel.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -8,6 +9,7 @@ const t = useTranslations(lang);
 
     <h1 class='font-bold text-xl text-center my-4'>{t('Landing.h1')}</h1>
 
-    <img src='../agriturismo.jpg' alt='Agriturismo' class='max-h-fit object-contain'/>
+    <!-- <img src='../agriturismo.jpg' alt='Agriturismo' class='max-h-fit object-contain'/> -->
+    <ImageCarousel />
 
 </main>
