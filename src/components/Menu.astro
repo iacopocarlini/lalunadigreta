@@ -1,18 +1,60 @@
 ---
 //import { SITE_TITLE } from '../consts';
+import MenuImageCarousel from './MenuImageCarousel.astro';
 ---
 
 <!-- Specialità e Menu -->
-<div class='my-4'>
+<div class='my-12 mx-2 md:mx-8'>
     
-    <h1 class='text-xl mx-2 font-bold'>LE NOSTRE SPECIALITA'</h1>
+    <h1 class='text-xl font-bold'>LE NOSTRE SPECIALITA'</h1>
 
     <br>
     
-    <img src='../steak.jpg' alt='Bistecca' class='mx-auto'>
+    <MenuImageCarousel />
 
     <br>
 
-    <img src='../menu.png' alt='menu' class='mx-auto'>
+    <p>
+        L'azienda agricola produce olio, mele rotelle, 
+        ortaggi, frutta e verdura, carne di pollo, tacchino,
+        coniglio e maiale, uova fresche. Alleviamo anche avicoli
+        cunicoli ornamentali.
 
+        <br>
+
+        Da noi potete acquistare i prodotti freschi e vedere la nostra
+        produzione
+    </p>
+
+    <br> 
+
+    <h1 class='text-xl font-bold'>MENU</h1>
+
+    <img src='../menu.png' alt='menu' class='mx-auto my-4 max-h-96'>
+
+    <br> 
+
+    <p>
+        Offriamo la possibilità di gustare piatti della
+        terra di Lunigiana direttamente nei luoghi da cui provengono e preparati
+        alla vecchia maniera, tutte le pietanze sono cucinate con prodotti propri 
+        o delle aziende lunigianesi. 
+    </p>
+
+    <br>
+
+    <p>
+    <strong>Alcuni dei nostri primi:</strong> ravioli di carne al ragù, ravioli alle erbette
+    e ricotta, lasagne bianche o verdi al forno, gnocchi e gnocchetti, tortelloni
+    di patate o zucca, tagliatelle, minestrone, e tanto altro...
+
+    </p>
+        <br>
+
+        <p>
+        <strong>Alcuni dei nostri secondi:</strong> pollo e tacchino al forno, cinta senese al forno,
+        arista con crema di verdure, involtini in agrodolce, coniglio fritto o alla
+        cacciatore, agnello al forno o fritto, cacciagione, maialino al forno e tanto altro...
+    </p>
+    </p>
 </div>
