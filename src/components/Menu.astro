@@ -1,12 +1,15 @@
 ---
-//import { SITE_TITLE } from '../consts';
 import MenuImageCarousel from './MenuImageCarousel.astro';
+import { getLangFromUrl, useTranslations  } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <!-- Specialità e Menu -->
 <div class='my-12 md:mx-8'>
     
-    <h1 class='text-xl mx-2 font-bold'>LE NOSTRE SPECIALITA'</h1>
+    <h1 class='text-xl mx-2 md:mx-0 font-bold'>{t('Menu.h1')}</h1>
 
     <br>
     
@@ -15,46 +18,33 @@ import MenuImageCarousel from './MenuImageCarousel.astro';
     <br>
 
     <p class="mx-2">
-        L'azienda agricola produce olio, mele rotelle, 
-        ortaggi, frutta e verdura, carne di pollo, tacchino,
-        coniglio e maiale, uova fresche. Alleviamo anche avicoli
-        cunicoli ornamentali.
 
-        <br>
+        {t('Menu.p1')}
 
-        Da noi potete acquistare i prodotti freschi e vedere la nostra
-        produzione
     </p>
 
     <br> 
 
-    <h1 class='text-xl mx-2 font-bold'>MENU</h1>
+    <h1 class='text-xl mx-2 my-12 font-bold'>MENU</h1>
 
-    <img src='../menu.png' alt='menu' class='mx-auto my-4 max-h-96'>
+    <img src='../menu.png' alt='menu' class='mx-auto my-4  md:h-[38rem]'>
 
     <br> 
 
     <p class="mx-2">
-        Offriamo la possibilità di gustare piatti della
-        terra di Lunigiana direttamente nei luoghi da cui provengono e preparati
-        alla vecchia maniera, tutte le pietanze sono cucinate con prodotti propri 
-        o delle aziende lunigianesi. 
+        {t('Menu.p2')}
     </p>
 
     <br>
 
     <p class="mx-2">
-    <strong>Alcuni dei nostri primi:</strong> ravioli di carne al ragù, ravioli alle erbette
-    e ricotta, lasagne bianche o verdi al forno, gnocchi e gnocchetti, tortelloni
-    di patate o zucca, tagliatelle, minestrone, e tanto altro...
+    <strong>{t('Menu.p3-title')}</strong> {t('Menu.p3')}
 
     </p>
         <br>
 
-        <p>
-        <strong>Alcuni dei nostri secondi:</strong> pollo e tacchino al forno, cinta senese al forno,
-        arista con crema di verdure, involtini in agrodolce, coniglio fritto o alla
-        cacciatore, agnello al forno o fritto, cacciagione, maialino al forno e tanto altro...
+        <p class="mx-2">
+        <strong>{t('Menu.p4-title')}</strong> 
     </p>
     </p>
     

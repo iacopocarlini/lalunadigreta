@@ -3,18 +3,18 @@ import { SITE_TITLE } from '../consts';
 import LanguagePicker from './LanguagePicker.astro';
 ---
 
-<!-- Header Menu Center -->
 <header class="w-full text-gray-700 bg-white border-t border-gray-100 body-font">
+	
 	<div class="container flex flex-row items-start justify-between p-6 mx-auto md:flex-row">
 		
 		<!-- Icon -->
-		<a class="flex items-center my-auto font-medium text-gray-900 title-font md:mb-0">
+		<a class="items-center h-full my-auto">
 			<img src='/favicon.png' alt='Restaurant icon' class='w-8 max-w-xs my-auto'/>
 		</a>
 		
 		<!-- Title -->
 		<nav class="flex-2 mx-auto my-auto">
-			<a href="#_" class="m-auto font-bold">{SITE_TITLE}</a>
+			<img src='/logo.png' alt='La luna di greta' class='w-2/3 mx-auto'/>
 		</nav>
 		
 		<LanguagePicker />

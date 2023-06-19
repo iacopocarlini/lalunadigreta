@@ -1,21 +1,19 @@
 ---
 //import { SITE_TITLE } from '../consts';
+import { getLangFromUrl, useTranslations  } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
 <!-- Presentazione -->
 <div class='my-12 mx-2 md:mx-8'>
     
-    <h1 class='text-xl font-bold'>CHI SIAMO</h1>
+    <h1 class='text-xl font-bold'>{t('Presentation.h1')}</h1>
 
     <br>
 
     <p class="">
-        Situato in posizione privilegiata nella campagna
-        dell'alta Lunigiana, immerso in un'oasi verde, a pochi passi
-        dai boschi di castagni e querce, nelle vicinanze di un torrente,
-        sorge il nostro Agriturismo frutto della passione di quattro 
-        generazioni per la campagna. La nostra struttura offre prodotti tipici,
-        ristorante con cibi fatti in casa con ingredienti frutto del nostro lavoro, 
-        e un parco per bambini.
+        {t('Presentation.p')}
     </p>
 </div>

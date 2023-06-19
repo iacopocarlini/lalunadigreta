@@ -1,16 +1,20 @@
 ---
 import { FBLINK, PHONE, TRIPADVLINK } from "../consts";
 import { EMAIL } from "../consts";
+import { getLangFromUrl, useTranslations  } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 ---
 
-<div class="my-12">
-    <h1 class="text-xl mx-2 font-bold">DOVE SIAMO</h1>
+<div class="my-12 mx-2 md:mx-8">
+    <h1 class="text-xl font-bold">{t('Map.h1')}</h1>
 
     <br />
 
-    <div class="mx-2">
+    <div class="">
         <iframe
-            class="w-full h-96 max-h-screen"
+            class="w-full h-96 max-h-screen md:h-[40rem]"
             src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2861.1786925233077!2d10.063781111767204!3d44.18278497096132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d519fb14b20c69%3A0x7270f81a6c6e0187!2sAGRITURISMO%20LA%20LUNA%20DI%20GRETA!5e0!3m2!1sit!2sit!4v1686748088941!5m2!1sit!2sit"
             allowfullscreen=""
             loading="lazy"

@@ -2,20 +2,24 @@
 import { FBLINK, INSTAGRAM_LINK, PHONE, TRIPADVLINK } from '../consts';
 import { EMAIL } from '../consts';
 import SocialIcon from './SocialIcon.astro';
+import { getLangFromUrl, useTranslations  } from '../i18n/utils';
+
+const lang = getLangFromUrl(Astro.url);
+const t = useTranslations(lang);
 
 const replacedPhone = PHONE.replace('+', '');
 const whatsappText = "Ciao,%20sarei%20interessato%20ad%20un%20tavolo%20per%20stasera"
 const WhatsappLink = `https://wa.me/${replacedPhone}?text=${whatsappText}`;
 ---
 
-<div class='mt-12 pt-12 md:my-8 text-center'>
+<div class='mx-2 mt-12 pt-12 text-center md:mx-8 md:my-8'>
 	
-    <h5 class="font-bold">CONTATTI</h5>
+    <h5 class="font-bold">{t('Contacts.h1')}</h5>
 
     <br>
 
-    <p>Tel. <a href=`tel:${PHONE}`>{PHONE}</a></p>
-    <p>Email <a href=`mailto:${EMAIL}`>{EMAIL}</a></p>
+    <p>{t('Contacts.phone')}<a href=`tel:${PHONE}`>{PHONE}</a></p>
+    <p>{t('Contacts.email')} <a href=`mailto:${EMAIL}`>{EMAIL}</a></p>
 
     <!-- Social -->
     <div class="flex justify-center gap-x-6 my-8">
