@@ -1,6 +1,6 @@
 ---
-import MenuImageCarousel from './MenuImageCarousel.astro';
 import { getLangFromUrl, useTranslations  } from '../i18n/utils';
+import ImageSwiper from './ImageSwiper.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -13,7 +13,10 @@ const t = useTranslations(lang);
 
     <br>
     
-    <MenuImageCarousel />
+    <ImageSwiper 
+        images={['../menu.jpg', '../menu.jpg', '../menu.jpg']}
+        isLazy={true}
+    />
 
     <br>
 
@@ -27,7 +30,7 @@ const t = useTranslations(lang);
 
     <h1 class='text-xl mx-2 my-12 font-bold'>MENU</h1>
 
-    <img src='../menu.png' alt='menu' class='mx-auto my-4  md:h-[38rem]'>
+    <img src='../menu.png' alt='Menu' loading="lazy" class='mx-auto my-4  md:h-[38rem]'>
 
     <br> 
 

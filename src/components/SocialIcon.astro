@@ -2,7 +2,7 @@
 const { name, link, color, size, path } = Astro.props;
 ---
 
-<a href={link} target="_blank">
+<a href={link} aria-label={name} target="_blank">
     <svg
     xmlns="http://www.w3.org/2000/svg"
     class="h-7 w-7"

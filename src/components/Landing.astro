@@ -1,6 +1,6 @@
 ---
 import { getLangFromUrl, useTranslations  } from '../i18n/utils';
-import LandingImageCarousel from './LandingImageCarousel.astro';
+import ImageSwiper from './ImageSwiper.astro';
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
@@ -9,6 +9,9 @@ const t = useTranslations(lang);
 
     <!-- <h1 class='font-bold text-xl text-center my-4 md:my-8'>{t('Landing.h1')}</h1> -->
 
-    <LandingImageCarousel />
+    <ImageSwiper 
+        images={['../agri-horiz.jpg', '../agri-horiz.jpg', '../agri-horiz.jpg']}  
+        isLazy={false}  
+    />
 
 </main>

@@ -1,0 +1,24 @@
+---
+// https://swiperjs.com/swiper-api
+const { images, isLazy } = Astro.props;
+---
+
+<div class="swiper relative w-full h-full md:h-[40rem]">
+  <div class="swiper-wrapper">
+    
+      {images.map((item) => (
+        <div class="swiper-slide">
+          <img src={item} alt='View' class="h-full" loading={isLazy ? 'lazy' : 'eager'}>
+          </div>
+       ))}
+      
+    </div>
+  </div>
+</div>
+
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
+<script is:inline src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+<script is:inline>
+  new Swiper('.swiper', {
+  })
+</script>
