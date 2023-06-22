@@ -1,14 +1,20 @@
 ---
 // https://swiperjs.com/swiper-api
-const { images, isLazy } = Astro.props;
+const { images, isLazy, height, maxHeight } = Astro.props;
 ---
 
-<div class="swiper relative w-full h-full md:h-[40rem]">
+<div class=`swiper relative w-full ${height}`>
   <div class="swiper-wrapper">
     
       {images.map((item) => (
-        <div class="swiper-slide">
-          <img src={item} alt='View' class="h-full" loading={isLazy ? 'lazy' : 'eager'}>
+        <div class="swiper-slide h-full">
+          {item[1] === 'img' ? 
+            <img src={item[0]} alt='View' class="object-cover" loading={isLazy ? 'lazy' : 'eager'}> :
+            <video class="h-full object-cover" loop autoplay muted>
+              <source src={item[0]} type="video/mp4">
+              Your browser does not support the video tag.
+            </video>
+          }
           </div>
        ))}
       

@@ -10,8 +10,12 @@ const t = useTranslations(lang);
     <!-- <h1 class='font-bold text-xl text-center my-4 md:my-8'>{t('Landing.h1')}</h1> -->
 
     <ImageSwiper 
-        images={['../agri-horiz.jpg', '../agri-horiz.jpg', '../agri-horiz.jpg']}  
-        isLazy={false}  
+        images={[
+            ['../vid_agri_left_to_right.mp4', 'video'], 
+            ['../agri_close.jpg', 'img'], 
+            ['../location4.jpg', 'img']]}  
+        isLazy={false} 
+        height="h-[40rem]" 
     />
 
 </main>
