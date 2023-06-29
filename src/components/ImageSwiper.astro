@@ -3,7 +3,7 @@
 const { images, isLazy, height, maxHeight } = Astro.props;
 ---
 
-<div class=`swiper relative w-full ${height}`>
+<div class=`swiper relative w-full ${height} ${maxHeight}`>
   <div class="swiper-wrapper">
     
       {images.map((item) => (

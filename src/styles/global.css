@@ -1,3 +1,7 @@
+@font-face {
+    font-family: Caveat;
+    src: url(Caveat.ttf);
+}
 
 :root {
 
@@ -8,7 +12,22 @@ html {
 }
 
 body {
-	font-family: Verdana, sans-serif;
+	font-family: 'Montserrat',Helvetica,Arial,Lucida,sans-serif;
 	line-height: 1.5;
 	color: #444;
+	background-color: #fffcf5;
+}
+
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Caveat', handwriting;
+	font-size: 1.6rem !important;
+	text-align: center;
+}
+
+.bg-base {
+	background-color: #fffcf5;
+}
+
+.bg-medium {
+	background-color: #fff1e1;
 }
