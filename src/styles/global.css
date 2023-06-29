@@ -1,14 +1,7 @@
 @font-face {
     font-family: Caveat;
     src: url(Caveat.ttf);
-}
-
-:root {
-
-}
-
-html {
-
+	font-display: swap;
 }
 
 body {
