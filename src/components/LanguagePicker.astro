@@ -1,10 +1,16 @@
 ---
+import { getLangFromUrl  } from '../i18n/utils';
+const lang = getLangFromUrl(Astro.url);
 ---
 
 <div class="">
   
   <p class="text-[15px] md:text-xs text-center">
-    <a class='p-2' href='/it/'>ITA</a> <a class='p-2' href='/en/'>ENG</a>
+    {
+      lang === 'it' ?
+      <a class='p-2' href='/en/'>ENG</a> :
+      <a class='p-2' href='/it/'>ITA</a> 
+    } 
   </p>
 
 </div>
