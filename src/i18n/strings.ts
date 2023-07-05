@@ -23,8 +23,8 @@ export const languages = {
       'Menu.h1': "LE NOSTRE SPECIALITA'",
       'Menu.p1': `
         L'azienda agricola produce olio, mele rotelle, ortaggi, frutta e verdura, 
-        carne di pollo, tacchino, coniglio e maiale, uova fresche. Alleviamo anche avicoli cunicoli ornamentali.
-        Da noi potete acquistare i prodotti freschi e vedere la nostra produzione`,
+        carne di pollo, tacchino, coniglio e maiale, uova fresche. Alleviamo anche avicoli ornamentali.
+        Da noi potete acquistare i prodotti freschi e vedere la nostra produzione.`,
       'Menu.p2': `Offriamo la possibilità di gustare piatti della terra di Lunigiana direttamente nei luoghi da cui provengono e preparati alla vecchia maniera, 
       tutte le pietanze sono cucinate con prodotti propri o delle aziende lunigianesi.`,
       'Menu.p3-title': 'Alcuni dei nostri primi:',
