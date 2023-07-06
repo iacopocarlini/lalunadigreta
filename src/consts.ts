@@ -1,6 +1,6 @@
 // Global data here
-export const SITE_TITLE = 'LA LUNA DI GRETA';
-export const SITE_DESCRIPTION = 'Agriturismo a Bardine di San Terenzo';
+export const SITE_TITLE = 'La Luna di Greta';
+export const SITE_DESCRIPTION = 'Agriturismo a Bardine di San Terenzo (MS)';
 export const PHONE = '+393331754790';
 export const EMAIL = 'lalunadigreta@gmail.com';
 export const AUTHOR = 'Iacopo Carlini';
