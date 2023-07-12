@@ -10,15 +10,19 @@ export const languages = {
     // ITALIAN
     it: {
       'Landing.h1': 'Agriturismo a Bardine di San Terenzo, Toscana',
+      
       'Presentation.h1': 'CHI SIAMO',
       
-      'Presentation.p': `Situato in posizione privilegiata nella campagna
-      dell'alta Lunigiana, immerso in un'oasi verde, a pochi passi
-      dai boschi di castagni e querce, nelle vicinanze di un torrente,
-      sorge il nostro Agriturismo frutto della passione di quattro 
-      generazioni per la campagna. La nostra struttura offre prodotti tipici,
-      ristorante con cibi fatti in casa con ingredienti frutto del nostro lavoro, 
-      e un parco per bambini.`,
+      'Presentation.p1': `Il nostro Agriturismo si trova in una posizione privilegiata
+      nella suggestiva campagna dell'alta Lunigiana. 
+      Circondato da una lussureggiante oasi verde, 
+      a breve distanza dai boschi di castagni e querce e vicino a un incantevole torrente, 
+      il nostro Agriturismo rappresenta il risultato della passione per la campagna che ha coinvolto quattro generazioni.`,
+     
+      'Presentation.p2': `Presso la nostra struttura potrai gustare i prodotti tipici della zona, 
+      assaporando il gusto autentico della nostra cucina casalinga preparata con ingredienti 
+      coltivati direttamente da noi. Inoltre, offriamo un parco giochi per bambini, 
+      dove i più piccoli potranno divertirsi e giocare in un ambiente sicuro e accogliente.`,
       
       'Menu.h1': "LE NOSTRE SPECIALITA'",
       'Menu.p1': `
@@ -49,15 +53,16 @@ export const languages = {
 
       'Presentation.h1': 'ABOUT',
 
-      'Presentation.p': `Placed in a green oasis in the heart of Lunigiana, our Agriturismo is the result of a
+      'Presentation.p1': `Placed in a green oasis in the heart of Lunigiana, our Agriturismo is the result of a
       4 generation passion for the countryside life. Our facility offers local products, home made cuisine restaurant,
       a playground for kids and much more.`,
+      'Presentation.p2': ``,
 
       'Menu.h1': 'DELICATESSEN',
       'Menu.p1': `Our farm produces oil, apples, groceries, meats and fresh eggs. While staying at the Agriturismo, 
       you can buy our fresh products or watch the making process.`,
       'Menu.p2': `Here you can taste the original old style Lunigiana cuisine. 
-      Every dish is made using fresh ingredients from our farm or other Lunigiana farms. `,
+      Every dish is made using fresh ingredients from our farm or other Lunigiana farms.`,
       'Menu.p3-title': 'Some of our main courses:',
       'Menu.p3': `Ravioli in ragù or herbs sauce, white or green lasagna, gnocchi and gnocchetti, tagliatelle, minestrone`,
       'Menu.p4-title': 'Some of our second courses:',
