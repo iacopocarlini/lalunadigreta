@@ -8,8 +8,8 @@ const { images, isLazy, height, maxHeight } = Astro.props;
     
       {images.map((item) => (
         <div class="swiper-slide h-full">
-          {item[1] === 'img' ? 
-            <img src={item[0]} alt='View' class="w-full h-full object-cover" loading={isLazy ? 'lazy' : 'eager'}> :
+          {item[2] === 'img' ? 
+            <img src={item[0]} srcset={item[1]} sizes="50vw" alt='View' class="w-full h-full object-cover" loading={isLazy ? 'lazy' : 'eager'}> :
             <video class="h-full object-cover" loop autoplay muted>
               <source src={item[0]} type="video/mp4">
               Your browser does not support the video tag.

@@ -40,7 +40,10 @@ export const languages = {
       arista con crema di verdure, involtini in agrodolce, coniglio fritto o alla
       cacciatore, agnello al forno o fritto, cacciagione, maialino al forno...`, 
 
+      'Gallery.h1': 'GALLERIA',
+
       'Map.h1': 'DOVE SIAMO',
+      'Map.a': 'Vedi su Google Maps',
 
       'Contacts.h1': 'CONTATTI',
       'Contacts.phone': 'Tel:',
@@ -68,7 +71,10 @@ export const languages = {
       'Menu.p4-title': 'Some of our second courses:',
       'Menu.p4':`roasted chicken, turkey or piglet, roasted typical "cinta senese", fried rabbit or lamb`,       
 
+      'Gallery.h1': 'GALLERY',
+
       'Map.h1': 'FIND US',
+      'Map.a': 'View on Google Maps',
 
       'Contacts.h1': 'CONTACT US',
       'Contacts.phone': 'Phone:',

@@ -1,25 +1,43 @@
 ---
-import { FBLINK, PHONE, TRIPADVLINK } from "../consts";
-import { EMAIL } from "../consts";
-import { getLangFromUrl, useTranslations  } from '../i18n/utils';
+import { MAPSLINK } from "../consts";
+import { getLangFromUrl, useTranslations } from "../i18n/utils";
 
 const lang = getLangFromUrl(Astro.url);
 const t = useTranslations(lang);
 ---
 
-<div class="my-12 mx-2 md:mx-8">
-    <h1 class="text-xl font-bold">{t('Map.h1')}</h1>
+<div class="p-2 my-6 text-center md:p-8">
+  
+    <h2 class="font-bold">{t("Map.h1")}</h2>
 
-    <br />
+  <div class="flex justify-center gap-x-6 my-8">
 
-    <div class="">
-        <iframe
-            title="Map"
-            class="w-full h-96 max-h-screen md:h-[40rem]"
-            src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2861.1786925233077!2d10.063781111767204!3d44.18278497096132!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x12d519fb14b20c69%3A0x7270f81a6c6e0187!2sAGRITURISMO%20LA%20LUNA%20DI%20GRETA!5e0!3m2!1sit!2sit!4v1686748088941!5m2!1sit!2sit"
-            allowfullscreen=""
-            loading="lazy"
-            referrerpolicy="no-referrer-when-downgrade">
-        </iframe>
-    </div>
+    <!-- Google maps icon -->
+    <a href={MAPSLINK} aria-label={t("Map.a")}>
+      <svg
+        xmlns="http://www.w3.org/2000/svg"
+        viewBox="0 0 48 48"
+        width="48px"
+        height="48px"
+        ><path
+          fill="#48b564"
+          d="M35.76,26.36h0.01c0,0-3.77,5.53-6.94,9.64c-2.74,3.55-3.54,6.59-3.77,8.06	C24.97,44.6,24.53,45,24,45s-0.97-0.4-1.06-0.94c-0.23-1.47-1.03-4.51-3.77-8.06c-0.42-0.55-0.85-1.12-1.28-1.7L28.24,22l8.33-9.88	C37.49,14.05,38,16.21,38,18.5C38,21.4,37.17,24.09,35.76,26.36z"
+        ></path><path
+          fill="#fcc60e"
+          d="M28.24,22L17.89,34.3c-2.82-3.78-5.66-7.94-5.66-7.94h0.01c-0.3-0.48-0.57-0.97-0.8-1.48L19.76,15	c-0.79,0.95-1.26,2.17-1.26,3.5c0,3.04,2.46,5.5,5.5,5.5C25.71,24,27.24,23.22,28.24,22z"
+        ></path><path
+          fill="#2c85eb"
+          d="M28.4,4.74l-8.57,10.18L13.27,9.2C15.83,6.02,19.69,4,24,4C25.54,4,27.02,4.26,28.4,4.74z"
+        ></path><path
+          fill="#ed5748"
+          d="M19.83,14.92L19.76,15l-8.32,9.88C10.52,22.95,10,20.79,10,18.5c0-3.54,1.23-6.79,3.27-9.3	L19.83,14.92z"
+        ></path><path
+          fill="#5695f6"
+          d="M28.24,22c0.79-0.95,1.26-2.17,1.26-3.5c0-3.04-2.46-5.5-5.5-5.5c-1.71,0-3.24,0.78-4.24,2L28.4,4.74	c3.59,1.22,6.53,3.91,8.17,7.38L28.24,22z"
+        ></path>
+      </svg>
+      <!-- End of Google maps icon -->
+    </a>
+
+  </div>
 </div>

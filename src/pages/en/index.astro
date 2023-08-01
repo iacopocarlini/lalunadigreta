@@ -8,12 +8,18 @@ import Map from '../../components/Map.astro';
 import Footer from '../../components/Footer.astro';
 import { SITE_TITLE, SITE_DESCRIPTION } from '../../consts';
 import Contacts from '../../components/Contacts.astro';
+import Wave from '../../components/Wave.astro';
+import Gallery from '../../components/Gallery.astro';
 ---
 
 <!DOCTYPE html>
 <html lang="en">
 	<head>
-		<BaseHead title={SITE_TITLE} description={SITE_DESCRIPTION} />
+		<BaseHead 	
+			title={SITE_TITLE}	
+			description={SITE_DESCRIPTION} 
+			image='../agri_close.webp'
+		/>
 	</head>
 	
 	<body>
@@ -26,7 +32,11 @@ import Contacts from '../../components/Contacts.astro';
 
 		<Menu />
 
+		<Gallery />
+
 		<Map />
+
+		<Wave />
 
 		<Contacts />
 
@@ -34,3 +44,4 @@ import Contacts from '../../components/Contacts.astro';
 
 	</body>
 </html>
+
